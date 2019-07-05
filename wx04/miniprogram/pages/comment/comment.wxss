@@ -1,0 +1,66 @@
+/* pages/comment/comment.wxss */
+/* 背景图片 */
+.detail-container{
+  height: 400rpx;
+  filter: blur(40rpx);/*模糊滤镜*/
+  opacity: 0.9;/*透明度*/
+}
+/*底层 遮罩层 */
+.detail-mask{
+  position: absolute;
+  width: 100%;
+  height: 400rpx;
+  background: #333;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+/* 电影详情列表*/
+.detail-info{
+  position: absolute;/*绝对定位*/
+  display: flex;/*弹性布局*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400rpx;/*高度同遮罩层*/
+  padding: 20rpx;
+}
+.detail-img{
+  width: 280rpx;
+  height: 90%;
+  margin-right: 24rpx;/*右侧文字间距*/
+}
+/* 右侧区域 占满剩余部分 */
+.detail{
+  flex-grow:1;/*剩余空间1等分*/
+  line-height: 60rpx; 
+}
+.detail view{
+  color: #fff;
+  font-size: 24rpx;
+}
+/* 标题 */
+.detail .detail-nm{
+  font-weight: bolder;
+  font-size: 36rpx;
+}
+/* 打分 */
+.detail .detail-sc{
+  color: #fc0;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+/* 电影描述 */
+.desc{
+  color: #555;
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+/* 上传图片 */
+.btn{
+  margin-bottom: 60rpx;
+}
+.comment-img{
+  width: 200rpx;
+  height: 200rpx;
+}

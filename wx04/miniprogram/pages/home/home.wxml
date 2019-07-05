@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<!-- 一部电影区域 -->
+<view class='movie' wx:for="{{movielist}}" wx:key="{{index}}">
+  <!-- 电影图片 -->
+  <image class='movie-img' src='{{item.images.small}}'></image>
+  <!-- 电影介绍 -->
+  <view class='movie-info'>
+    <!-- 电影标题 -->
+    <view class='movie-title' >{{item.title}}</view>
+    <!-- 观众评分 -->
+    <view> 观众评分：
+      <text class='movie-score'>{{item.rating.average}}</text>
+    </view>
+    <!-- 主演：多位 -->
+    <view> 主演：
+      <text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}} </text>
+    </view>
+    <!-- 年份 -->
+    <view>年份：{{item.year}}</view>
+    <!-- 详情按钮 -->
+    <button class='movie-comment' data-movieid="{{item.id}}" bindtap='jumpComment'>详情</button>
+  </view>
+</view>
+

@@ -1,0 +1,2 @@
+<!--pages/xzmap/xzmap.wxml-->
+<map id='map' longitude='108.911516' latitude='34.239038' scale='14' show-location style='width:100%;height:600rpx;' controls='{{controls}}' polyline='{{polyline}}' markers='{{markers}}'></map>

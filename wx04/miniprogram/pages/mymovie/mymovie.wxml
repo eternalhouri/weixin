@@ -1,0 +1,13 @@
+<!--pages/mymovie/mymovie.wxml-->
+<view class='movielist'>
+
+</view>
+<view class='upload'>
+  <van-field value="{{ content }}" placeholder="留下你的感想吧...."    bind:change="onContentChange"/>
+  <van-button type="warning" bindtap='uploadImg' custom-class='btn-upload'>上传图片</van-button>
+  <view>
+    <image src='{{image}}'></image>
+  </view>
+  <van-button type="danger" size='large' bindtap='submit'>提交</van-button>
+</view>
+
